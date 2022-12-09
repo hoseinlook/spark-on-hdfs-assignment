@@ -1,0 +1,5 @@
+venv/
+.idea
+hadoop_*
+.ipynb_checkpoints/
+shared_dir/.ipynb_checkpoints/
