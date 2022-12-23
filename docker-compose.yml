@@ -55,7 +55,7 @@ services:
     container_name: jupyterlab
     ports:
       - 8888:8888
-      - 4041:4040
+      - 4040:4040
     volumes:
       - ./shared_dir:/opt/workspace
     hostname: 10.20.30.100
@@ -68,6 +68,8 @@ services:
     image: hoseinlook/spark-master:3.0.0
     volumes:
       - ./shared_dir:/opt/workspace
+    ports:
+      - 8080:8080
     networks:
       hadoop_net:
         ipv4_address: 10.20.30.31
